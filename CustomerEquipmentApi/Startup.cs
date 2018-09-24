@@ -32,7 +32,7 @@ namespace CustomerEquipmentApi
 
         public Startup(IConfiguration configuration)
         {
-            var environment = "prod";
+            var environment = "dev";
             var builder = new Microsoft.Extensions.Configuration.ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
             .AddJsonFile($"appsettings.{environment}.json", false, true);
